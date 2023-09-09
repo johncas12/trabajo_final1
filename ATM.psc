@@ -35,19 +35,20 @@ Algoritmo ATM
 						Escribir 'Ingrese la cantidad a retirar'
 						Leer retiro
 						Si retiro>saldo Entonces
-							Escribir '===================================='
+							Escribir '====================================='
 							Escribir 'No tiene fondos suficientes'
 							Escribir 'Su saldo actual es: $',saldo
-							Escribir '===================================='
+							Escribir '====================================='
 						SiNo
 							saldo <- saldo-retiro
-							Escribir '===================================='
+							Escribir '====================================='
 							Escribir 'La cantidad retirada fue de: $',retiro
 							Escribir 'Su nuevo saldo es: $',saldo
-							Escribir '===================================='
+							Escribir '====================================='
 						FinSi
 					4:
 						Escribir 'Gracias por usar nuestros servicios.'
+						Escribir '-------------------------------------'
 						
 				FinSegun
 			FinMientras
@@ -55,8 +56,10 @@ Algoritmo ATM
 			contador <- contador+1
 			Si contador==4 Entonces
 				Escribir 'Cantidad de intentos excedida, intente mas tarde :('
+				Escribir '---------------------------------------------------'
 			SiNo
 				Escribir '*****Usuario o Contraseña Incorrectos*****'
+				Escribir '------------------------------------------'
 			FinSi
 		FinSi
 	FinMientras
